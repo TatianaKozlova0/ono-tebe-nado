@@ -1,3 +1,9 @@
+body {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header {
     max-width: 1440px;
     display: grid;
@@ -47,12 +53,11 @@
     width: 148px;
     height: 105px;
     flex-shrink: 0;
-    
 }
 
 .header__address {
     font-style: normal;
-    width: 240px;
+    max-width: 240px;
     justify-self: end;
     display: flex;
     flex-direction: column;
@@ -67,25 +72,103 @@
 }
 
 .cover {
-    background-color: #e9c5f8;
-    padding: 165px 50px 62px;
-    max-width: 1440px;
+    background-image: url(/images/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.6);
+}
+
+.cover__title {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 165px 50px 103px;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 30px;
+}
+
+.aligned-text {
+    position: relative;
+    display:block;
+    min-width: 1340px;
+}
+
+.aligned-text_center {
+    text-align: center;
+    bottom: 8px;
+}
+
+.aligned-text_right {
+    text-align: end;
+    bottom: 23px;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0px;
+}
+
+.cover__description {
+    position: relative;
+    top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 52px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 53px;
+}
+
+.cover__description-text {
+    text-align: center;
+    word-spacing: 17px;
+    line-height: 28px;
+}
+
+.description-text-spacing-extended {
+    word-spacing: 22px;
+}
+
+.bet-button {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    min-width: 257px;
+    min-height: 52px;
+    margin-right: 50px;
+    margin-left: 78px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: #fff solid 1px;
 }
 
 .lots {
     background-color: #fca5c6;
     padding: 180px 50px 181px;
-    max-width: 1440px;
 }
 
 .about {
     background-color: #94c3fa;
     padding: 0px 50px 180px;
-    max-width: 1440px;
 }
 
 .footer {
     background-color: #f8ad57;
     padding: 0px 50px 90px;
-    max-width: 1440px;
 }
