@@ -50,7 +50,7 @@ body {
     flex-shrink: 0;
 }
 
-.header__address {
+.address {
     font-style: normal;
     max-width: 240px;
     justify-self: end;
@@ -82,7 +82,7 @@ body {
     display:flex;
     flex-direction: column;
     gap: 20px;
-    padding: 165px 50px 103px;
+    padding: 165px 50px 133px;
     font-size: 100px;
     font-weight: 700;
     line-height: 1.15;
@@ -97,12 +97,12 @@ body {
 
 .aligned-text_center {
     text-align: center;
-    bottom: 8px;
+    line-height: 1;
 }
 
 .aligned-text_right {
     text-align: end;
-    bottom: 23px;
+    line-height: 1;
 }
 
 .letter-spacing-extended {
@@ -279,14 +279,9 @@ body {
     justify-content: space-between;
     padding: 0px 50px 90px;
     font-size: 18px;
-    
 }
 
-.footer__address {
-    line-height: 24.3px;
-    max-width: 240px;
-    font-style: normal;
-}
+
 
 .footer__menu-list {
     display: flex;
